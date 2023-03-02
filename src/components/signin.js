@@ -1,8 +1,9 @@
 import React from 'react'
 import './signin.css';
 import { useNavigate } from 'react-router-dom'
+import Goods from  './Goods.js';
 import { useState } from "react";
-import {createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut} from 'firebase/auth';
+import { signInWithEmailAndPassword, signInWithPopup, signOut, updateCurrentUser} from 'firebase/auth';
 import{auth, google} from '../config/firebase-config';
 import { async } from "@firebase/util";
 
@@ -15,6 +16,7 @@ const Signin = () => {
     const signIn = async () =>{
         try{
        await signInWithEmailAndPassword(auth,email,password);
+       <Goods/>
         } catch(err){
             console.error(err);
         }
