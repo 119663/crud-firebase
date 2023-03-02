@@ -1,0 +1,35 @@
+.App{
+    text-align: center;
+    flex-direction: column;
+}
+.email{
+    width: 600px;
+    font-size: 18pt;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.pass{
+    width: 600px;
+    font-size: 18pt;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    size: 10;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+.butt{
+    /* display: block; */
+    align-items: center;
+    justify-content: center;
+    /* float: left; */
+}
