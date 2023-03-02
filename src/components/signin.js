@@ -2,6 +2,7 @@ import React from 'react'
 import './signin.css';
 import { useNavigate } from 'react-router-dom'
 import Goods from  './Goods.js';
+import Update from  './Update.js';
 import { useState } from "react";
 import { signInWithEmailAndPassword, signInWithPopup, signOut, updateCurrentUser} from 'firebase/auth';
 import{auth, google} from '../config/firebase-config';
@@ -16,7 +17,7 @@ const Signin = () => {
     const signIn = async () =>{
         try{
        await signInWithEmailAndPassword(auth,email,password);
-       <Goods/>
+       <Update/>
         } catch(err){
             console.error(err);
         }
